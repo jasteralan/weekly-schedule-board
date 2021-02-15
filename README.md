@@ -1,6 +1,6 @@
-# Homework from Jaster
+# Week Schedule Board UI
 
-I removed node_modules folder to prevent the archive to big :)
+![UI](./capture.jpg)
 
 ## Run Dev on Local
 ```
@@ -17,6 +17,8 @@ serve -s build
 # should run on 5000 port by default
 ```
 
-## Environment
+## Environment / Library
 
-Node v12.14.1
+- Node v12.14
+- create-react-app
+- xstate
