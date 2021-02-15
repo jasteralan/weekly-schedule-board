@@ -1,38 +1,103 @@
+
+
 .App {
-  text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 620px;
+    color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+    color: #555;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Control-Panel:after {
+    display: block;
+    content: '';
+    clear: both;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Control-Panel-Nav {
+    display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
+.Control-Panel-Nav button {
+    appearance: none;
+    margin: 0;
+    padding: 5px 1rem;
+    border-radius: 3px;
+    box-shadow: none;
+    background-color: transparent;
+    color: #555;
+    border: 1px solid #555;
+    outline: none;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Control-Panel-Nav button[disabled] {
+    color: #ddd;
+    border: 1px solid #ddd;
+    cursor: not-allowed;
+}
+
+.Control-Panel-Nav button:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.Control-Panel-Nav button:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.Control-Panel-Duration {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.Control-Panel-Hint {
+    float: right;
+    font-size: 0.8rem;
+}
+
+.Calandar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Daily-Schedule {
+    width: 12%;
+    margin-top: 15px;
+    border-top: 4px solid #02cab9;
+}
+
+.Daily-Schedule h2 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.Daily-Schedule-Date {
+    text-align: center;
+}
+
+.Daily-Schedule-Slots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.Daily-Schedule-Slot {
+    margin: 3px;
+    color: #b6b6b6;
+    font-size: 0.9rem;
+}
+
+.Daily-Schedule-Slot.Booked {
+    color:  #02cab9;
+    font-weight: 500;
 }
