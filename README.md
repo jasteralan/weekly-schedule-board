@@ -1,6 +1,6 @@
 # Week Schedule Board UI
 
-![UI](./capture.jpg)
+<img src="/capture.jpg" width=400 />
 
 ## Run Dev on Local
 ```
